@@ -33,7 +33,7 @@ process-cloud
 ~~~
 
 ## 架构图
-![](docs/工作流引擎架构图.png)
+![](https://github.com/tudouxian/process-cloud/tree/dev/docs/工作流引擎架构图.png)
 ## 特色功能
 
 ## 在线体验
@@ -42,9 +42,9 @@ process-cloud
 
 演示地址：http://47.96.74.120  
 ## 演示图
-![](docs/模型设计器.png)
-![](docs/管理列表.png)
-![](docs/跟踪监控.png)
+![](https://github.com/tudouxian/process-cloud/tree/dev/docs/模型设计器.png)
+![](https://github.com/tudouxian/process-cloud/tree/dev/docs/管理列表.png)
+![](https://github.com/tudouxian/process-cloud/tree/dev/docs/跟踪监控.png)
 
 
 ## 流程引擎交流群&公众号
