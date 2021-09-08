@@ -11,7 +11,7 @@
 
     <modules>
 <!--        <module>process-center</module>-->
-<!--        <module>process-form-center</module>-->
+        <module>process-form-center</module>
         <module>process-common</module>
 <!--        <module>process-idm-api</module>-->
 <!--        <module>process-gateway</module>-->
