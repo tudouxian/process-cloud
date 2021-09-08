@@ -17,6 +17,7 @@
         <module>process-gateway</module>
         <module>process-center-api</module>
         <module>process-bussiness</module>
+        <module>process-idm</module>
     </modules>
 
     <properties>
