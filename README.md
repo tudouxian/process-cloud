@@ -55,5 +55,7 @@ process-cloud
 
 
 ## 流程引擎交流群&公众号
+微信搜索 土豆仙
+后续会更新流程引擎学习文章 
 
 ![](http://image.zmxblog92.com/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg)
