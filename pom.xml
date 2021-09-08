@@ -10,11 +10,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-<!--        <module>process-center</module>-->
+        <module>process-center</module>
         <module>process-form-center</module>
         <module>process-common</module>
-<!--        <module>process-idm-api</module>-->
-<!--        <module>process-gateway</module>-->
+        <module>process-idm-api</module>
+        <module>process-gateway</module>
         <module>process-center-api</module>
         <module>process-bussiness</module>
     </modules>
