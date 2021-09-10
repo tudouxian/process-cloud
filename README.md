@@ -45,10 +45,10 @@ process-cloud
 ~~~
 
 ## 系统部署
-* 安装nacos、redis、mysql
+* 安装nacos、redis、mysql、minio
 * 执行sql脚本
 * 更改相应配置
-* 启动项目-其中必须启动的 system、auth、gateway、processCenter，运行前端
+* 启动项目-其中必须启动的 system、auth、gateway、processCenter，运行前端，其他服务按需要启动
 
 ## 架构图
 ![](http://image.zmxblog92.com/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%BC%95%E6%93%8E%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
