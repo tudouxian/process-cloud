@@ -2819,3 +2819,65 @@ END
 delimiter ;
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+
+--函数脚本
+CREATE DEFINER=`root`@`%` FUNCTION `FuncGroupCompare`(`configGroup` varchar(20),`userGroup` varchar(20)) RETURNS int(1)
+BEGIN
+
+declare cArea varchar(100);
+declare cDept varchar(100);
+declare cRole varchar(100);
+
+declare uArea varchar(100);
+declare uDept varchar(100);
+declare uRole varchar(100);
+
+SET cArea = substring_index(configGroup,'+',1);
+SET cDept = substring_index(substring_index(configGroup,'+',2),'+',1);
+SET cRole = substring_index(configGroup,'+',-1);
+
+SET uArea = substring_index(userGroup,'+',1);
+SET uDept = substring_index(substring_index(userGroup,'+',2),'+',1);
+SET uRole = substring_index(userGroup,'+',-1);
+
+
+ IF ((ISNULL(configGroup)=1) || (LENGTH(trim(configGroup))=0)  || (ISNULL(userGroup)=1) || (LENGTH(trim(userGroup))=0) )
+
+      THEN
+			RETURN	 0;
+	END IF;
+
+    IF
+				(
+				(
+				(ISNULL(cArea)=1) || (LENGTH(trim(cArea))=0)
+				||
+				(
+				((ISNULL(uArea)!=1) || (LENGTH(trim(uArea))!=0)) && STRCMP(cArea,uArea) = 0
+				)
+				)
+				&&
+				(
+				(ISNULL(cDept)=1) || (LENGTH(trim(cDept))=0)
+				||
+				(
+				((ISNULL(uDept)!=1) || (LENGTH(trim(uDept))!=0)) && 	(STRCMP(cDept,uDept) = 0)
+				)
+				)
+				&&
+				(
+				(ISNULL(cRole)=1) || (LENGTH(trim(cRole))=0)
+				||
+				(
+				((ISNULL(uRole)!=1) || (LENGTH(trim(uRole))!=0)) && (STRCMP(cRole,uRole) = 0)
+				)
+			)
+			)
+			THEN
+			RETURN	 1;
+	END IF;
+
+RETURN	 0;
+
+END
