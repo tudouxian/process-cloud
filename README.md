@@ -4,6 +4,7 @@
 
 如果你是新手，那么这绝对是你拿来学习flowable流程引擎最佳的项目；如果你对流程引擎熟悉，并且着手用流程引擎来辅助项目，那么这绝对是你最好的流程引擎微服务管理端。
 
+
 * 本项目用户体系测试环境依赖若依，开发者可以切换集成自己公司的。
 * 本项目技术采用Spring Boot、Spring Cloud & Alibaba。
 * 注册中心、配置中心选型Nacos。
@@ -11,26 +12,43 @@
 * RPC实现有Dubbo版本和OpenFeign版本。
 * 文件存储Minio
 
+## 友情链接
+- BPMN.js封装不错的模型设计器项目[process-designer](https://miyuesc.github.io/process-designer/）
+- 大多数时候我们仅仅想学习、练手流程引擎，甚至用来快速处理项目中的问题。微服务化明显部署太过复杂了。因此，单体架构的集成对应功能的项目还是更实用，方便来愉快的接项目。[]()
+
 ## 系统模块
 
 ~~~
 process-cloud     
-├── process-bussiness              // 流程引擎对接示例 [8200]
+├── process-bussiness              // 流程引擎对接示例 [9208]
 ├── process-bussiness-front         // 流程引擎对接示例前端 [80]
-├── process-center            // 流程引擎核心 [8100]
+├── process-center            // 流程引擎核心 [9206]
 ├── process-cloud-front            // 流程引擎核心前端  [80]
 ├── process-center-api             // 对外提供服务接口模块
-├── process-form-center         // 自定义表单核心 [8000]
+├── process-form-center         // 自定义表单核心 [9207]
 ├── process-common          // 通用模块
 │       └── process-common-pojo                         // 核心模块
 │       └── process-idm-pojo                    // 
 │       └── process-center-pojo                    // 
 ├── process-idm-api         // 用户体系对接依赖
 ├── process-gateway          // 流程引擎网关  [8080]
-├── process-auth          // 流程引擎认证中心  [9200]
-├── process-system          // 流程引擎用户体系  [9201]
+├── process-idm          // 若依开源项目
+│       └── ruoyi-api                      
+│       └── ruoyi-auth                         // 认证中心  [9200]
+│       └── ruoyi-common                       
+│       └── ruoyi-modules   
+│                   └── ruoyi-file    
+│                   └── ruoyi-gen                        
+│                   └── ruoyi-job                        
+│                   └── ruoyi-system       // 用户体系  [9201]                                                             
 ├──pom.xml                // 公共依赖
 ~~~
+
+## 系统部署
+* 安装nacos、redis、mysql
+* 执行sql脚本
+* 更改相应配置
+* 启动项目-其中必须启动的 system、auth、gateway、processCenter，运行前端
 
 ## 架构图
 ![](http://image.zmxblog92.com/%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%BC%95%E6%93%8E%E6%9E%B6%E6%9E%84%E5%9B%BE.png)

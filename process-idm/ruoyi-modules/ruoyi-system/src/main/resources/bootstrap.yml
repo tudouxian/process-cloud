@@ -1,0 +1,59 @@
+# Tomcat
+server:
+  port: 9201
+
+# Spring
+spring: 
+  application:
+    # 应用名称
+    name: process-system
+  profiles:
+    # 环境配置
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: localhost:8848
+      config:
+        # 配置中心地址
+        server-addr: localhost:8848
+        # 配置文件格式
+        file-extension: yml
+        # 共享配置
+        shared-configs:
+          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+
+#dubbo配置
+dubbo:
+  application:
+    name: bussiness
+  scan:
+    base-packages: com.ruoyi.system.service.dubbo
+  protocol:
+    name: dubbo
+    port: 8998
+    # serialization: kryo
+  registry:
+    address: nacos://localhost
+    port: 8848
+  metadata-report:
+    address: redis://root:12345@localhost:6379
+    username: root
+    password: 12345
+  config-center:
+    address: nacos://localhost:8848
+  consumer:
+    timeout: 30000
+    group: process
+    version: 1.0.0
+    check: false
+  provider:
+    group: process
+    version: 1.0.0
+
+
+
+mybatis:
+  configuration:
+   log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
