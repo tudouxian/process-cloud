@@ -1,0 +1,1222 @@
+22:07:24.720 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+22:07:25.375 [main] INFO  org.apache.dubbo.spring.boot.context.event.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v2.7.7) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v2.7.7) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+22:07:25.386 [main] INFO  org.apache.dubbo.spring.boot.context.event.OverrideDubboConfigApplicationListener - Dubbo Config was overridden by externalized configuration {dubbo.application.name=process-center, dubbo.application.qos-enable=false, dubbo.config-center.address=nacos://localhost:8848, dubbo.config.multiple=true, dubbo.consumer.group=process, dubbo.consumer.timeout=30000, dubbo.consumer.version=1.0.0, dubbo.metadata-report.address=redis://localhost:6379, dubbo.protocol.name=dubbo, dubbo.protocol.port=8999, dubbo.provider.group=process, dubbo.provider.version=1.0.0, dubbo.registry.address=nacos://localhost, dubbo.registry.port=8848, dubbo.scan.base-packages=com.workflow.process.center.service.dubbo}
+22:07:25.488 [main] INFO  com.workflow.process.center.flowable.core.FlowableTimerTest - Starting FlowableTimerTest using Java 1.8.0_251 on LAPTOP-VESM13MU with PID 29852 (started by ÍÁ¶¹ÏÉÈË in D:\process-cloud\process-center)
+22:07:25.489 [main] INFO  com.workflow.process.center.flowable.core.FlowableTimerTest - The following profiles are active: dev
+22:07:25.569 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.spring.boot.beans.factory.config.DubboConfigBeanCustomizer]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [namePropertyDefaultValueDubboConfigBeanCustomizer] has been registered.
+22:07:27.512 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [referenceAnnotationBeanPostProcessor] has been registered.
+22:07:27.513 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigAliasPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigAliasPostProcessor] has been registered.
+22:07:27.515 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboLifecycleComponentApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboLifecycleComponentApplicationListener] has been registered.
+22:07:27.516 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboBootstrapApplicationListener] has been registered.
+22:07:27.518 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.config.DubboConfigDefaultPropertyValueBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigDefaultPropertyValueBeanPostProcessor] has been registered.
+22:07:27.901 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, content : Root bean: class [org.apache.dubbo.config.ApplicationConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:07:27.901 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [configurationBeanBindingPostProcessor] has been registered.
+22:07:27.901 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.RegistryConfig#0, content : Root bean: class [org.apache.dubbo.config.RegistryConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:07:27.902 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, content : Root bean: class [org.apache.dubbo.config.ProtocolConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:07:27.902 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ProviderConfig#0, content : Root bean: class [org.apache.dubbo.config.ProviderConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:07:27.903 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, content : Root bean: class [org.apache.dubbo.config.ConsumerConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:07:27.903 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.spring.ConfigCenterBean#0, content : Root bean: class [org.apache.dubbo.config.spring.ConfigCenterBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:07:27.903 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.MetadataReportConfig#0, content : Root bean: class [org.apache.dubbo.config.MetadataReportConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:07:32.582 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+22:07:35.452 [main] INFO  p6spy - 2021-09-09 22:07:35 | ºÄÊ± 21 ms | SQL Óï¾ä£º
+SELECT 1 FROM DUAL;
+22:07:35.468 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+22:07:36.909 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowEmail",So @TableField annotation will not work!
+22:07:36.968 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowExpression",So @TableField annotation will not work!
+22:07:37.102 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListener",So @TableField annotation will not work!
+22:07:37.151 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListenerParam",So @TableField annotation will not work!
+22:07:37.244 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModel",So @TableField annotation will not work!
+22:07:37.287 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReForm",So @TableField annotation will not work!
+22:07:37.337 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReFormReActivity",So @TableField annotation will not work!
+22:07:38.959 [main] INFO  org.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration - No deployment resources were found for autodeployment
+22:07:41.644 [main] INFO  org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration - No deployment resources were found for autodeployment
+22:07:42.115 [main] INFO  org.flowable.spring.boot.eventregistry.EventRegistryAutoConfiguration - No deployment resources were found for autodeployment
+22:07:45.193 [main] INFO  com.workflow.process.center.config.flowable.FlowableConfig - ÅäÖÃÀ©Õ¹±í´ïÊ½½âÎö·½·¨
+22:07:45.202 [main] INFO  com.workflow.process.center.config.flowable.FlowableConfig - ³õÊ¼»¯×â»§ÓÊÏä·þÎñÅäÖÃ£¡
+22:07:45.379 [main] INFO  p6spy - 2021-09-09 22:07:45 | ºÄÊ± 7 ms | SQL Óï¾ä£º
+SELECT id,tennat_id,mail_server_host,mail_server_port,mail_default_from,mail_username,mail_password,mail_ssl,note,creator,create_time,update_time,updator,del_flag FROM work_flow_email WHERE del_flag=0;
+22:07:45.457 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Found 5 Engine Configurators in total:
+22:07:45.458 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:07:45.458 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:07:45.458 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+22:07:45.458 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+22:07:45.458 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+22:07:45.458 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:07:45.463 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:07:45.466 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+22:07:45.469 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+22:07:45.472 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+22:07:47.915 [main] INFO  org.flowable.common.engine.impl.async.DefaultAsyncTaskExecutor - Creating thread pool queue of size 100
+22:07:47.919 [main] INFO  org.flowable.common.engine.impl.async.DefaultAsyncTaskExecutor - Creating thread factory with naming pattern flowable-async-job-executor-thread-%d
+22:07:47.922 [main] INFO  org.flowable.common.engine.impl.async.DefaultAsyncTaskExecutor - Creating executor service with corePoolSize 8, maxPoolSize 8 and keepAliveTime 5000
+22:07:47.923 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:07:48.011 [main] INFO  p6spy - 2021-09-09 22:07:48 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:07:48.167 [main] INFO  p6spy - 2021-09-09 22:07:48 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select version();
+22:07:48.853 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:07:50.031 [main] INFO  liquibase.changelog - Reading from workflow_center.FLW_EV_DATABASECHANGELOG
+22:07:50.149 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:07:50.176 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:07:50.177 [main] WARN  liquibase.hub - Skipping auto-registration
+22:07:50.198 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:07:50.204 [main] INFO  org.flowable.eventregistry.impl.EventRegistryEngineImpl - EventRegistryEngine default created
+22:07:50.207 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:07:50.289 [main] INFO  p6spy - 2021-09-09 22:07:50 | ºÄÊ± 4 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_ID_PROPERTY where NAME_ = 'schema.version';
+22:07:50.291 [main] INFO  org.flowable.idm.engine.impl.IdmEngineImpl - IdmEngine default created
+22:07:50.294 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+22:07:50.369 [main] INFO  p6spy - 2021-09-09 22:07:50 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:07:50.375 [main] INFO  p6spy - 2021-09-09 22:07:50 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select version();
+22:07:50.390 [main] INFO  p6spy - 2021-09-09 22:07:50 | ºÄÊ± 4 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK;
+22:07:50.397 [main] INFO  p6spy - 2021-09-09 22:07:50 | ºÄÊ± 5 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK;
+22:07:50.401 [main] INFO  p6spy - 2021-09-09 22:07:50 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:07:50.407 [main] INFO  p6spy - 2021-09-09 22:07:50 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:07:50.403' WHERE ID = 1 AND `LOCKED` = 0;
+22:07:50.413 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:07:50.644 [main] INFO  p6spy - 2021-09-09 22:07:50 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT MD5SUM FROM workflow_center.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1;
+22:07:50.649 [main] INFO  p6spy - 2021-09-09 22:07:50 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_DMN_DATABASECHANGELOG;
+22:07:50.649 [main] INFO  liquibase.changelog - Reading from workflow_center.ACT_DMN_DATABASECHANGELOG
+22:07:50.654 [main] INFO  p6spy - 2021-09-09 22:07:50 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT * FROM workflow_center.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC;
+22:07:50.680 [main] INFO  p6spy - 2021-09-09 22:07:50 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:07:50.685 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:07:50.690 [main] INFO  p6spy - 2021-09-09 22:07:50 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:07:50.695 [main] INFO  p6spy - 2021-09-09 22:07:50 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:07:50.69' WHERE ID = 1 AND `LOCKED` = 0;
+22:07:50.700 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:07:50.701 [main] WARN  liquibase.hub - Skipping auto-registration
+22:07:50.706 [main] INFO  p6spy - 2021-09-09 22:07:50 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:07:50.710 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:07:50.714 [main] INFO  org.flowable.dmn.engine.impl.DmnEngineImpl - DmnEngine default created
+22:07:50.717 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+22:07:50.724 [main] INFO  org.flowable.content.spring.SpringContentEngineConfiguration - Content file system root : C:\Users\ÍÁ¶¹ÏÉÈË\content
+22:07:51.074 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+select version();
+22:07:51.086 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK;
+22:07:51.089 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK;
+22:07:51.092 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1;
+22:07:51.098 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:07:51.093' WHERE ID = 1 AND `LOCKED` = 0;
+22:07:51.109 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:07:51.312 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT MD5SUM FROM workflow_center.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1;
+22:07:51.317 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CO_DATABASECHANGELOG;
+22:07:51.317 [main] INFO  liquibase.changelog - Reading from workflow_center.ACT_CO_DATABASECHANGELOG
+22:07:51.321 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT * FROM workflow_center.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC;
+22:07:51.335 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:07:51.345 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:07:51.348 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1;
+22:07:51.353 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:07:51.348' WHERE ID = 1 AND `LOCKED` = 0;
+22:07:51.358 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:07:51.359 [main] WARN  liquibase.hub - Skipping auto-registration
+22:07:51.363 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:07:51.368 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:07:51.373 [main] INFO  org.flowable.content.engine.impl.ContentEngineImpl - ContentEngine default created
+22:07:51.376 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+22:07:51.541 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:07:51.555 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'identitylink.schema.version';
+22:07:51.570 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'entitylink.schema.version';
+22:07:51.584 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'eventsubscription.schema.version';
+22:07:51.599 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'task.schema.version';
+22:07:51.612 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'variable.schema.version';
+22:07:51.626 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'job.schema.version';
+22:07:51.631 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+select version();
+22:07:51.640 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK;
+22:07:51.643 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK;
+22:07:51.647 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:07:51.651 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:07:51.648' WHERE ID = 1 AND `LOCKED` = 0;
+22:07:51.655 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:07:51.873 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT MD5SUM FROM workflow_center.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1;
+22:07:51.877 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CMMN_DATABASECHANGELOG;
+22:07:51.878 [main] INFO  liquibase.changelog - Reading from workflow_center.ACT_CMMN_DATABASECHANGELOG
+22:07:51.883 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT * FROM workflow_center.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC;
+22:07:51.931 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:07:51.937 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:07:51.941 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:07:51.947 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:07:51.942' WHERE ID = 1 AND `LOCKED` = 0;
+22:07:51.952 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:07:51.952 [main] WARN  liquibase.hub - Skipping auto-registration
+22:07:51.957 [main] INFO  p6spy - 2021-09-09 22:07:51 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:07:51.964 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:07:51.969 [main] INFO  org.flowable.cmmn.engine.impl.CmmnEngineImpl - CmmnEngine default created
+22:07:52.005 [main] INFO  p6spy - 2021-09-09 22:07:52 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:07:52.019 [main] INFO  p6spy - 2021-09-09 22:07:52 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select * from ACT_GE_PROPERTY where NAME_ = 'schema.version';
+22:07:52.046 [main] INFO  p6spy - 2021-09-09 22:07:52 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'identitylink.schema.version';
+22:07:52.064 [main] INFO  p6spy - 2021-09-09 22:07:52 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'entitylink.schema.version';
+22:07:52.081 [main] INFO  p6spy - 2021-09-09 22:07:52 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'eventsubscription.schema.version';
+22:07:52.097 [main] INFO  p6spy - 2021-09-09 22:07:52 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'task.schema.version';
+22:07:52.115 [main] INFO  p6spy - 2021-09-09 22:07:52 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'variable.schema.version';
+22:07:52.134 [main] INFO  p6spy - 2021-09-09 22:07:52 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'job.schema.version';
+22:07:52.151 [main] INFO  p6spy - 2021-09-09 22:07:52 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'batch.schema.version';
+22:07:52.158 [main] INFO  org.flowable.engine.impl.ProcessEngineImpl - ProcessEngine default created
+22:07:52.201 [main] INFO  p6spy - 2021-09-09 22:07:52 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select count(RES.ID_) from ACT_RE_DEPLOYMENT RES WHERE RES.ENGINE_VERSION_ = 'v5';
+22:07:52.203 [main] INFO  org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd - Total of v5 deployments found: 0
+22:07:52.214 [main] INFO  p6spy - 2021-09-09 22:07:52 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select * from ACT_GE_PROPERTY where NAME_ = 'cfg.execution-related-entities-count';
+22:07:52.224 [main] INFO  p6spy - 2021-09-09 22:07:52 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+select * from ACT_GE_PROPERTY where NAME_ = 'cfg.task-related-entities-count';
+22:07:57.258 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+22:07:59.656 [cluster-ClusterId{value='613a153df61a197d3504134c', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188) [mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) [mongodb-driver-core-4.2.3.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_251]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_251]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_251]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_251]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_251]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_251]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_251]
+	at java.net.Socket.connect(Socket.java:606) ~[?:1.8.0_251]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.2.3.jar:?]
+	... 4 more
+22:08:06.227 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:application name="process-center" hostname="LAPTOP-VESM13MU" qosEnable="false" />] have been binding by the configuration properties [{name=process-center, qos-enable=false}]
+22:08:06.327 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:registry address="nacos://localhost" protocol="nacos" port="8848" />] have been binding by the configuration properties [{address=nacos://localhost, port=8848}]
+22:08:06.371 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:protocol name="dubbo" port="8999" />] have been binding by the configuration properties [{name=dubbo, port=8999}]
+22:08:06.430 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:provider />] have been binding by the configuration properties [{group=process, version=1.0.0}]
+22:08:06.551 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:consumer />] have been binding by the configuration properties [{timeout=30000, group=process, version=1.0.0}]
+22:08:06.584 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:config-center includeSpringEnv="false" />] have been binding by the configuration properties [{address=nacos://localhost:8848}]
+22:08:06.616 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:metadata-report address="redis://localhost:6379" />] have been binding by the configuration properties [{address=redis://localhost:6379}]
+22:08:10.115 [main] INFO  org.reflections.Reflections - Reflections took 36 ms to scan 1 urls, producing 3 keys and 6 values 
+22:08:10.163 [main] INFO  org.reflections.Reflections - Reflections took 13 ms to scan 1 urls, producing 4 keys and 9 values 
+22:08:10.183 [main] INFO  org.reflections.Reflections - Reflections took 16 ms to scan 1 urls, producing 3 keys and 10 values 
+22:08:10.210 [main] INFO  org.reflections.Reflections - Reflections took 24 ms to scan 13 urls, producing 0 keys and 0 values 
+22:08:10.222 [main] INFO  org.reflections.Reflections - Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+22:08:10.239 [main] INFO  org.reflections.Reflections - Reflections took 14 ms to scan 1 urls, producing 1 keys and 7 values 
+22:08:10.253 [main] INFO  org.reflections.Reflections - Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+22:08:10.274 [main] INFO  org.reflections.Reflections - Reflections took 19 ms to scan 13 urls, producing 0 keys and 0 values 
+22:08:12.601 [main] INFO  org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+22:08:12.603 [Thread-17] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable - starting to acquire async jobs due
+22:08:12.625 [Thread-18] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable - starting to acquire async jobs due
+22:08:12.625 [Thread-19] INFO  org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable - starting to reset expired jobs for engine cmmn
+22:08:13.848 [flowable-cmmn-reset-expired-jobs] ERROR com.alibaba.druid.filter.stat.StatFilter - slow sql 1176 millis. select
+        RES.*   
+        from ACT_RU_JOB RES
+         WHERE SCOPE_TYPE_ = ?
+            
+              and ((LOCK_EXP_TIME_ is not null and LOCK_EXP_TIME_ < ?)
+              or (LOCK_EXP_TIME_ is null and CREATE_TIME_ < ?))  
+         LIMIT ? OFFSET ?["cmmn","2021-09-09 22:08:12","2021-09-08 22:08:12",3,0]
+22:08:13.866 [flowable-cmmn-acquire-timer-jobs] WARN  com.alibaba.druid.pool.DruidDataSource - get connection timeout retry : 1
+22:08:13.887 [Druid-ConnectionPool-Create-1447360100] INFO  p6spy - 2021-09-09 22:08:13 | ºÄÊ± 15 ms | SQL Óï¾ä£º
+SELECT 1 FROM DUAL;
+22:08:13.937 [flowable-cmmn-reset-expired-jobs] INFO  p6spy - 2021-09-09 22:08:13 | ºÄÊ± 6 ms | SQL Óï¾ä£º
+select RES.* from ACT_RU_EXTERNAL_JOB RES WHERE SCOPE_TYPE_ = 'cmmn' and LOCK_EXP_TIME_ is not null and LOCK_EXP_TIME_ < '2021-09-09T22:08:13.925+0800' LIMIT 3 OFFSET 0;
+22:08:15.000 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:15.021 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:15.126 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.189 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.198 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.206 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.290 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:08:15.307 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:15.313 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:15.330 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.339 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.348 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.357 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.367 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.374 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:08:18.203 [main] INFO  org.apache.dubbo.spring.boot.context.event.AwaitingNonWebApplicationListener -  [Dubbo] Current Spring Boot Application is about to shutdown...
+22:08:18.244 [main] INFO  org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+22:08:18.244 [flowable-cmmn-acquire-timer-jobs] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable - stopped async job due acquisition
+22:08:18.244 [flowable-cmmn-acquire-async-jobs] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable - stopped async job due acquisition for engine cmmn
+22:08:18.244 [flowable-cmmn-reset-expired-jobs] INFO  org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable - stopped resetting expired jobs for engine cmmn
+22:08:18.305 [main] INFO  p6spy - 2021-09-09 22:08:18 | ºÄÊ± 39 ms | SQL Óï¾ä£º
+update ACT_CMMN_RU_CASE_INST set LOCK_TIME_ = null, LOCK_OWNER_ = null where LOCK_OWNER_ = 'f746194e-3de7-4d18-9b7f-9b53571aeac8';
+22:08:19.036 [main] INFO  p6spy - 2021-09-09 22:08:19 | ºÄÊ± 15 ms | SQL Óï¾ä£º
+update ACT_RU_EXECUTION set LOCK_TIME_ = null, LOCK_OWNER_ = null where LOCK_OWNER_ = '9d0e7b36-c146-4997-8ddb-db83397e5d08';
+22:08:19.050 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+22:08:19.055 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+22:08:19.087 [main] INFO  org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+22:08:19.720 [main] INFO  org.apache.dubbo.spring.boot.context.event.OverrideDubboConfigApplicationListener - Dubbo Config was overridden by externalized configuration {dubbo.application.name=process-center, dubbo.application.qos-enable=false, dubbo.config-center.address=nacos://localhost:8848, dubbo.config.multiple=true, dubbo.consumer.group=process, dubbo.consumer.timeout=30000, dubbo.consumer.version=1.0.0, dubbo.metadata-report.address=redis://localhost:6379, dubbo.protocol.name=dubbo, dubbo.protocol.port=8999, dubbo.provider.group=process, dubbo.provider.version=1.0.0, dubbo.registry.address=nacos://localhost, dubbo.registry.port=8848, dubbo.scan.base-packages=com.workflow.process.center.service.dubbo}
+22:08:19.732 [main] INFO  com.workflow.process.center.flowable.core.FlowableTimerTest - Starting FlowableTimerTest using Java 1.8.0_251 on LAPTOP-VESM13MU with PID 29852 (started by ÍÁ¶¹ÏÉÈË in D:\process-cloud\process-center)
+22:08:19.732 [main] INFO  com.workflow.process.center.flowable.core.FlowableTimerTest - The following profiles are active: dev
+22:08:19.738 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.spring.boot.beans.factory.config.DubboConfigBeanCustomizer]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [namePropertyDefaultValueDubboConfigBeanCustomizer] has been registered.
+22:08:20.623 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [referenceAnnotationBeanPostProcessor] has been registered.
+22:08:20.623 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigAliasPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigAliasPostProcessor] has been registered.
+22:08:20.623 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboLifecycleComponentApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboLifecycleComponentApplicationListener] has been registered.
+22:08:20.624 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboBootstrapApplicationListener] has been registered.
+22:08:20.624 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.config.DubboConfigDefaultPropertyValueBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigDefaultPropertyValueBeanPostProcessor] has been registered.
+22:08:20.693 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, content : Root bean: class [org.apache.dubbo.config.ApplicationConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:08:20.695 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [configurationBeanBindingPostProcessor] has been registered.
+22:08:20.695 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.RegistryConfig#0, content : Root bean: class [org.apache.dubbo.config.RegistryConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:08:20.696 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, content : Root bean: class [org.apache.dubbo.config.ProtocolConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:08:20.696 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ProviderConfig#0, content : Root bean: class [org.apache.dubbo.config.ProviderConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:08:20.697 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, content : Root bean: class [org.apache.dubbo.config.ConsumerConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:08:20.697 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.spring.ConfigCenterBean#0, content : Root bean: class [org.apache.dubbo.config.spring.ConfigCenterBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:08:20.697 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.MetadataReportConfig#0, content : Root bean: class [org.apache.dubbo.config.MetadataReportConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:08:22.207 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+22:08:23.513 [main] INFO  p6spy - 2021-09-09 22:08:23 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT 1 FROM DUAL;
+22:08:23.519 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+22:08:24.476 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowEmail",So @TableField annotation will not work!
+22:08:24.515 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowExpression",So @TableField annotation will not work!
+22:08:24.629 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListener",So @TableField annotation will not work!
+22:08:24.728 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListenerParam",So @TableField annotation will not work!
+22:08:24.826 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModel",So @TableField annotation will not work!
+22:08:24.871 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReForm",So @TableField annotation will not work!
+22:08:24.924 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReFormReActivity",So @TableField annotation will not work!
+22:08:26.050 [main] INFO  org.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration - No deployment resources were found for autodeployment
+22:08:28.120 [main] INFO  org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration - No deployment resources were found for autodeployment
+22:08:28.352 [main] INFO  org.flowable.spring.boot.eventregistry.EventRegistryAutoConfiguration - No deployment resources were found for autodeployment
+22:08:31.005 [main] INFO  com.workflow.process.center.config.flowable.FlowableConfig - ÅäÖÃÀ©Õ¹±í´ïÊ½½âÎö·½·¨
+22:08:31.005 [main] INFO  com.workflow.process.center.config.flowable.FlowableConfig - ³õÊ¼»¯×â»§ÓÊÏä·þÎñÅäÖÃ£¡
+22:08:31.012 [main] INFO  p6spy - 2021-09-09 22:08:31 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT id,tennat_id,mail_server_host,mail_server_port,mail_default_from,mail_username,mail_password,mail_ssl,note,creator,create_time,update_time,updator,del_flag FROM work_flow_email WHERE del_flag=0;
+22:08:31.023 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Found 5 Engine Configurators in total:
+22:08:31.023 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:08:31.023 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:08:31.023 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+22:08:31.024 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+22:08:31.024 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+22:08:31.024 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:08:31.025 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:08:31.027 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+22:08:31.029 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+22:08:31.031 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+22:08:31.659 [main] INFO  org.flowable.common.engine.impl.async.DefaultAsyncTaskExecutor - Creating thread pool queue of size 100
+22:08:31.659 [main] INFO  org.flowable.common.engine.impl.async.DefaultAsyncTaskExecutor - Creating thread factory with naming pattern flowable-async-job-executor-thread-%d
+22:08:31.660 [main] INFO  org.flowable.common.engine.impl.async.DefaultAsyncTaskExecutor - Creating executor service with corePoolSize 8, maxPoolSize 8 and keepAliveTime 5000
+22:08:31.660 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:08:31.723 [main] INFO  p6spy - 2021-09-09 22:08:31 | ºÄÊ± 4 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:08:31.731 [main] INFO  p6spy - 2021-09-09 22:08:31 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select version();
+22:08:32.016 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:08:32.270 [main] INFO  liquibase.changelog - Reading from workflow_center.FLW_EV_DATABASECHANGELOG
+22:08:32.289 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:08:32.299 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:08:32.299 [main] WARN  liquibase.hub - Skipping auto-registration
+22:08:32.308 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:08:32.313 [main] INFO  org.flowable.eventregistry.impl.EventRegistryEngineImpl - EventRegistryEngine default created
+22:08:32.313 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:08:32.336 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 4 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_ID_PROPERTY where NAME_ = 'schema.version';
+22:08:32.337 [main] INFO  org.flowable.idm.engine.impl.IdmEngineImpl - IdmEngine default created
+22:08:32.337 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+22:08:32.357 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:08:32.362 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select version();
+22:08:32.373 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK;
+22:08:32.376 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK;
+22:08:32.380 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:08:32.384 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:08:32.38' WHERE ID = 1 AND `LOCKED` = 0;
+22:08:32.389 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:08:32.608 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT MD5SUM FROM workflow_center.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1;
+22:08:32.612 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_DMN_DATABASECHANGELOG;
+22:08:32.612 [main] INFO  liquibase.changelog - Reading from workflow_center.ACT_DMN_DATABASECHANGELOG
+22:08:32.616 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT * FROM workflow_center.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC;
+22:08:32.632 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 4 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:08:32.638 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:08:32.641 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:08:32.650 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 6 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:08:32.642' WHERE ID = 1 AND `LOCKED` = 0;
+22:08:32.658 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:08:32.658 [main] WARN  liquibase.hub - Skipping auto-registration
+22:08:32.664 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:08:32.670 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:08:32.675 [main] INFO  org.flowable.dmn.engine.impl.DmnEngineImpl - DmnEngine default created
+22:08:32.675 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+22:08:32.675 [main] INFO  org.flowable.content.spring.SpringContentEngineConfiguration - Content file system root : C:\Users\ÍÁ¶¹ÏÉÈË\content
+22:08:32.686 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select version();
+22:08:32.698 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 4 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK;
+22:08:32.703 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK;
+22:08:32.707 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1;
+22:08:32.712 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:08:32.707' WHERE ID = 1 AND `LOCKED` = 0;
+22:08:32.717 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:08:32.927 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT MD5SUM FROM workflow_center.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1;
+22:08:32.931 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CO_DATABASECHANGELOG;
+22:08:32.932 [main] INFO  liquibase.changelog - Reading from workflow_center.ACT_CO_DATABASECHANGELOG
+22:08:32.935 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT * FROM workflow_center.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC;
+22:08:32.946 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:08:32.952 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:08:32.957 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1;
+22:08:32.962 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:08:32.958' WHERE ID = 1 AND `LOCKED` = 0;
+22:08:32.967 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:08:32.967 [main] WARN  liquibase.hub - Skipping auto-registration
+22:08:32.972 [main] INFO  p6spy - 2021-09-09 22:08:32 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:08:32.977 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:08:32.983 [main] INFO  org.flowable.content.engine.impl.ContentEngineImpl - ContentEngine default created
+22:08:32.983 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+22:08:33.010 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:08:33.028 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'identitylink.schema.version';
+22:08:33.048 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'entitylink.schema.version';
+22:08:33.066 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'eventsubscription.schema.version';
+22:08:33.085 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'task.schema.version';
+22:08:33.103 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'variable.schema.version';
+22:08:33.122 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'job.schema.version';
+22:08:33.128 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select version();
+22:08:33.139 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK;
+22:08:33.141 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK;
+22:08:33.146 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:08:33.150 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:08:33.147' WHERE ID = 1 AND `LOCKED` = 0;
+22:08:33.155 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:08:33.360 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT MD5SUM FROM workflow_center.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1;
+22:08:33.363 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CMMN_DATABASECHANGELOG;
+22:08:33.364 [main] INFO  liquibase.changelog - Reading from workflow_center.ACT_CMMN_DATABASECHANGELOG
+22:08:33.367 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT * FROM workflow_center.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC;
+22:08:33.394 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 6 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:08:33.403 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:08:33.408 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:08:33.416 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 4 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:08:33.408' WHERE ID = 1 AND `LOCKED` = 0;
+22:08:33.424 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:08:33.424 [main] WARN  liquibase.hub - Skipping auto-registration
+22:08:33.432 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 4 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:08:33.439 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:08:33.447 [main] INFO  org.flowable.cmmn.engine.impl.CmmnEngineImpl - CmmnEngine default created
+22:08:33.476 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:08:33.493 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select * from ACT_GE_PROPERTY where NAME_ = 'schema.version';
+22:08:33.529 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'identitylink.schema.version';
+22:08:33.555 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'entitylink.schema.version';
+22:08:33.577 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'eventsubscription.schema.version';
+22:08:33.602 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'task.schema.version';
+22:08:33.623 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'variable.schema.version';
+22:08:33.645 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'job.schema.version';
+22:08:33.689 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'batch.schema.version';
+22:08:33.696 [main] INFO  org.flowable.engine.impl.ProcessEngineImpl - ProcessEngine default created
+22:08:33.708 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 5 ms | SQL Óï¾ä£º
+select count(RES.ID_) from ACT_RE_DEPLOYMENT RES WHERE RES.ENGINE_VERSION_ = 'v5';
+22:08:33.710 [main] INFO  org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd - Total of v5 deployments found: 0
+22:08:33.722 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select * from ACT_GE_PROPERTY where NAME_ = 'cfg.execution-related-entities-count';
+22:08:33.736 [main] INFO  p6spy - 2021-09-09 22:08:33 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select * from ACT_GE_PROPERTY where NAME_ = 'cfg.task-related-entities-count';
+22:08:36.634 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+22:08:38.664 [cluster-ClusterId{value='613a1564f61a197d3504134d', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188) [mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) [mongodb-driver-core-4.2.3.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_251]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_251]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_251]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_251]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_251]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_251]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_251]
+	at java.net.Socket.connect(Socket.java:606) ~[?:1.8.0_251]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.2.3.jar:?]
+	... 4 more
+22:08:41.894 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:application name="process-center" hostname="LAPTOP-VESM13MU" qosEnable="false" />] have been binding by the configuration properties [{name=process-center, qos-enable=false}]
+22:08:42.008 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:registry address="nacos://localhost" protocol="nacos" port="8848" />] have been binding by the configuration properties [{address=nacos://localhost, port=8848}]
+22:08:42.050 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:protocol name="dubbo" port="8999" />] have been binding by the configuration properties [{name=dubbo, port=8999}]
+22:08:42.105 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:provider />] have been binding by the configuration properties [{group=process, version=1.0.0}]
+22:08:42.238 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:consumer />] have been binding by the configuration properties [{timeout=30000, group=process, version=1.0.0}]
+22:08:42.271 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:config-center includeSpringEnv="false" />] have been binding by the configuration properties [{address=nacos://localhost:8848}]
+22:08:42.334 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:metadata-report address="redis://localhost:6379" />] have been binding by the configuration properties [{address=redis://localhost:6379}]
+22:08:45.058 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+22:08:45.058 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+22:08:45.058 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+22:08:45.060 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of e6255734-f87a-490b-a857-1b3778c57853
+22:08:45.060 [main] INFO  com.alibaba.nacos.common.remote.client - [e6255734-f87a-490b-a857-1b3778c57853]RpcClient init label, labels={module=naming, source=sdk}
+22:08:45.060 [main] INFO  com.alibaba.nacos.common.remote.client - [e6255734-f87a-490b-a857-1b3778c57853]RpcClient init, ServerListFactory =com.alibaba.nacos.client.naming.core.ServerListManager
+22:08:45.061 [main] INFO  com.alibaba.nacos.common.remote.client - [e6255734-f87a-490b-a857-1b3778c57853] Try to connect to server on start up, server: {serverIp='localhost', server main port=8848}
+22:08:45.186 [main] INFO  com.alibaba.nacos.common.remote.client - [e6255734-f87a-490b-a857-1b3778c57853] Success to connect to server [localhost:8848] on start up,connectionId=1631196525068_127.0.0.1_52850
+22:08:45.186 [main] INFO  com.alibaba.nacos.common.remote.client - [e6255734-f87a-490b-a857-1b3778c57853]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+22:08:45.186 [main] INFO  com.alibaba.nacos.common.remote.client - [e6255734-f87a-490b-a857-1b3778c57853]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+22:08:45.186 [main] INFO  com.alibaba.nacos.common.remote.client - [e6255734-f87a-490b-a857-1b3778c57853]Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+22:08:45.186 [main] INFO  com.alibaba.nacos.common.remote.client - [e6255734-f87a-490b-a857-1b3778c57853]Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcConnectionEventListener
+22:08:45.187 [main] INFO  com.alibaba.nacos.client.identify.CredentialWatcher - null No credential found
+22:08:45.233 [main] INFO  com.alibaba.nacos.client.naming - init new ips(1) service: DEFAULT_GROUP@@process-center@@DEFAULT -> [{"ip":"192.168.3.47","port":6066,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@process-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:08:45.234 [main] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@process-center@@DEFAULT -> [{"ip":"192.168.3.47","port":6066,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@process-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:08:45.237 [main] INFO  org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+22:08:45.238 [Thread-34] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable - starting to acquire async jobs due
+22:08:45.258 [Thread-35] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable - starting to acquire async jobs due
+22:08:45.259 [Thread-36] INFO  org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable - starting to reset expired jobs for engine cmmn
+22:08:45.325 [Druid-ConnectionPool-Create-1009128757] INFO  p6spy - 2021-09-09 22:08:45 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT 1 FROM DUAL;
+22:08:45.335 [flowable-cmmn-reset-expired-jobs] INFO  p6spy - 2021-09-09 22:08:45 | ºÄÊ± 5 ms | SQL Óï¾ä£º
+select RES.* from ACT_RU_EXTERNAL_JOB RES WHERE SCOPE_TYPE_ = 'cmmn' and LOCK_EXP_TIME_ is not null and LOCK_EXP_TIME_ < '2021-09-09T22:08:45.328+0800' LIMIT 3 OFFSET 0;
+22:08:45.593 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:45.601 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:45.648 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.680 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.685 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.692 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.710 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:08:45.720 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:45.724 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:45.734 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.738 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.742 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.747 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.752 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.757 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:08:45.766 [nacos-grpc-client-executor-5] INFO  com.alibaba.nacos.common.remote.client - [e6255734-f87a-490b-a857-1b3778c57853]receive server push request,request=NotifySubscriberRequest,requestId=150
+22:08:45.766 [nacos-grpc-client-executor-5] INFO  com.alibaba.nacos.client.naming - init new ips(1) service: DEFAULT_GROUP@@process-center -> [{"ip":"192.168.3.47","port":6066,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@process-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:08:45.767 [nacos-grpc-client-executor-5] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@process-center -> [{"ip":"192.168.3.47","port":6066,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@process-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:08:45.803 [nacos-grpc-client-executor-5] INFO  com.alibaba.nacos.common.remote.client - [e6255734-f87a-490b-a857-1b3778c57853]ack server push request,request=NotifySubscriberRequest,requestId=150
+22:08:47.028 [main] INFO  org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+22:08:47.029 [flowable-cmmn-acquire-timer-jobs] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable - stopped async job due acquisition
+22:08:47.029 [flowable-cmmn-reset-expired-jobs] INFO  org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable - stopped resetting expired jobs for engine cmmn
+22:08:47.029 [flowable-cmmn-acquire-async-jobs] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable - stopped async job due acquisition for engine cmmn
+22:08:47.059 [main] INFO  p6spy - 2021-09-09 22:08:47 | ºÄÊ± 10 ms | SQL Óï¾ä£º
+update ACT_CMMN_RU_CASE_INST set LOCK_TIME_ = null, LOCK_OWNER_ = null where LOCK_OWNER_ = 'f454e7d1-03ab-413e-a998-51163b0ec2ca';
+22:08:47.066 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+22:08:47.067 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+22:08:47.397 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+22:08:47.398 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+22:08:47.398 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+22:08:47.398 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+22:08:47.721 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+22:08:47.721 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+22:08:47.721 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+22:08:47.722 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+22:08:47.722 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+22:08:47.722 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+22:08:47.722 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+22:08:47.722 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+22:08:47.722 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+22:08:47.722 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+22:08:47.722 [main] INFO  com.alibaba.nacos.client.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+22:08:47.722 [main] INFO  com.alibaba.nacos.client.identify.CredentialService - [null] CredentialService is freed
+22:08:47.722 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+22:08:47.722 [main] INFO  com.alibaba.nacos.common.remote.client - Shutdown rpc client ,set status to shutdown
+22:08:47.722 [main] INFO  com.alibaba.nacos.common.remote.client - Shutdown  client event executor java.util.concurrent.ScheduledThreadPoolExecutor@644c9823[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+22:08:47.722 [main] INFO  com.alibaba.nacos.common.remote.client - Close current connection 1631196525068_127.0.0.1_52850
+22:08:47.723 [main] INFO  com.alibaba.nacos.common.remote.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@68fd8dd4[Running, pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 8]
+22:08:47.724 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+22:08:47.737 [main] INFO  p6spy - 2021-09-09 22:08:47 | ºÄÊ± 4 ms | SQL Óï¾ä£º
+update ACT_RU_EXECUTION set LOCK_TIME_ = null, LOCK_OWNER_ = null where LOCK_OWNER_ = 'a538fc7a-8adc-4498-a036-f90ced3f4de9';
+22:08:47.746 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closing ...
+22:08:47.748 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+22:08:47.753 [main] INFO  org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+22:08:48.277 [main] INFO  org.apache.dubbo.spring.boot.context.event.OverrideDubboConfigApplicationListener - Dubbo Config was overridden by externalized configuration {dubbo.application.name=process-center, dubbo.application.qos-enable=false, dubbo.config-center.address=nacos://localhost:8848, dubbo.config.multiple=true, dubbo.consumer.group=process, dubbo.consumer.timeout=30000, dubbo.consumer.version=1.0.0, dubbo.metadata-report.address=redis://localhost:6379, dubbo.protocol.name=dubbo, dubbo.protocol.port=8999, dubbo.provider.group=process, dubbo.provider.version=1.0.0, dubbo.registry.address=nacos://localhost, dubbo.registry.port=8848, dubbo.scan.base-packages=com.workflow.process.center.service.dubbo}
+22:08:48.287 [main] INFO  com.workflow.process.center.flowable.core.FlowableTimerTest - Starting FlowableTimerTest using Java 1.8.0_251 on LAPTOP-VESM13MU with PID 29852 (started by ÍÁ¶¹ÏÉÈË in D:\process-cloud\process-center)
+22:08:48.287 [main] INFO  com.workflow.process.center.flowable.core.FlowableTimerTest - The following profiles are active: dev
+22:08:48.292 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.spring.boot.beans.factory.config.DubboConfigBeanCustomizer]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [namePropertyDefaultValueDubboConfigBeanCustomizer] has been registered.
+22:08:49.471 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [referenceAnnotationBeanPostProcessor] has been registered.
+22:08:49.471 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigAliasPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigAliasPostProcessor] has been registered.
+22:08:49.471 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboLifecycleComponentApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboLifecycleComponentApplicationListener] has been registered.
+22:08:49.471 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboBootstrapApplicationListener] has been registered.
+22:08:49.471 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.config.DubboConfigDefaultPropertyValueBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigDefaultPropertyValueBeanPostProcessor] has been registered.
+22:08:49.537 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, content : Root bean: class [org.apache.dubbo.config.ApplicationConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:08:49.538 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [configurationBeanBindingPostProcessor] has been registered.
+22:08:49.538 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.RegistryConfig#0, content : Root bean: class [org.apache.dubbo.config.RegistryConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:08:49.538 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, content : Root bean: class [org.apache.dubbo.config.ProtocolConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:08:49.539 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ProviderConfig#0, content : Root bean: class [org.apache.dubbo.config.ProviderConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:08:49.539 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, content : Root bean: class [org.apache.dubbo.config.ConsumerConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:08:49.539 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.spring.ConfigCenterBean#0, content : Root bean: class [org.apache.dubbo.config.spring.ConfigCenterBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:08:49.539 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.MetadataReportConfig#0, content : Root bean: class [org.apache.dubbo.config.MetadataReportConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:08:50.688 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+22:08:51.781 [main] INFO  p6spy - 2021-09-09 22:08:51 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+SELECT 1 FROM DUAL;
+22:08:51.786 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-3} inited
+22:08:52.629 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowEmail",So @TableField annotation will not work!
+22:08:52.651 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowExpression",So @TableField annotation will not work!
+22:08:52.725 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListener",So @TableField annotation will not work!
+22:08:52.752 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListenerParam",So @TableField annotation will not work!
+22:08:52.809 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModel",So @TableField annotation will not work!
+22:08:52.843 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReForm",So @TableField annotation will not work!
+22:08:52.870 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReFormReActivity",So @TableField annotation will not work!
+22:08:53.997 [main] INFO  org.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration - No deployment resources were found for autodeployment
+22:08:56.156 [main] INFO  org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration - No deployment resources were found for autodeployment
+22:08:56.346 [main] INFO  org.flowable.spring.boot.eventregistry.EventRegistryAutoConfiguration - No deployment resources were found for autodeployment
+22:08:58.934 [main] INFO  com.workflow.process.center.config.flowable.FlowableConfig - ÅäÖÃÀ©Õ¹±í´ïÊ½½âÎö·½·¨
+22:08:58.934 [main] INFO  com.workflow.process.center.config.flowable.FlowableConfig - ³õÊ¼»¯×â»§ÓÊÏä·þÎñÅäÖÃ£¡
+22:08:58.942 [main] INFO  p6spy - 2021-09-09 22:08:58 | ºÄÊ± 5 ms | SQL Óï¾ä£º
+SELECT id,tennat_id,mail_server_host,mail_server_port,mail_default_from,mail_username,mail_password,mail_ssl,note,creator,create_time,update_time,updator,del_flag FROM work_flow_email WHERE del_flag=0;
+22:08:58.955 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Found 5 Engine Configurators in total:
+22:08:58.955 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:08:58.955 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:08:58.955 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+22:08:58.955 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+22:08:58.955 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+22:08:58.955 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:08:58.958 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:08:58.960 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+22:08:58.962 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+22:08:58.964 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+22:08:59.488 [main] INFO  org.flowable.common.engine.impl.async.DefaultAsyncTaskExecutor - Creating thread pool queue of size 100
+22:08:59.488 [main] INFO  org.flowable.common.engine.impl.async.DefaultAsyncTaskExecutor - Creating thread factory with naming pattern flowable-async-job-executor-thread-%d
+22:08:59.488 [main] INFO  org.flowable.common.engine.impl.async.DefaultAsyncTaskExecutor - Creating executor service with corePoolSize 8, maxPoolSize 8 and keepAliveTime 5000
+22:08:59.488 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:08:59.511 [main] INFO  p6spy - 2021-09-09 22:08:59 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:08:59.517 [main] INFO  p6spy - 2021-09-09 22:08:59 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select version();
+22:08:59.558 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:08:59.802 [main] INFO  liquibase.changelog - Reading from workflow_center.FLW_EV_DATABASECHANGELOG
+22:08:59.828 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:08:59.853 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:08:59.853 [main] WARN  liquibase.hub - Skipping auto-registration
+22:08:59.872 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:08:59.877 [main] INFO  org.flowable.eventregistry.impl.EventRegistryEngineImpl - EventRegistryEngine default created
+22:08:59.877 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:08:59.901 [main] INFO  p6spy - 2021-09-09 22:08:59 | ºÄÊ± 4 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_ID_PROPERTY where NAME_ = 'schema.version';
+22:08:59.902 [main] INFO  org.flowable.idm.engine.impl.IdmEngineImpl - IdmEngine default created
+22:08:59.902 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+22:08:59.927 [main] INFO  p6spy - 2021-09-09 22:08:59 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:08:59.933 [main] INFO  p6spy - 2021-09-09 22:08:59 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select version();
+22:08:59.948 [main] INFO  p6spy - 2021-09-09 22:08:59 | ºÄÊ± 8 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK;
+22:08:59.951 [main] INFO  p6spy - 2021-09-09 22:08:59 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK;
+22:08:59.955 [main] INFO  p6spy - 2021-09-09 22:08:59 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:08:59.959 [main] INFO  p6spy - 2021-09-09 22:08:59 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:08:59.955' WHERE ID = 1 AND `LOCKED` = 0;
+22:08:59.970 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:09:00.232 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT MD5SUM FROM workflow_center.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1;
+22:09:00.237 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_DMN_DATABASECHANGELOG;
+22:09:00.237 [main] INFO  liquibase.changelog - Reading from workflow_center.ACT_DMN_DATABASECHANGELOG
+22:09:00.241 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT * FROM workflow_center.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC;
+22:09:00.253 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:09:00.267 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:09:00.271 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:09:00.276 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:09:00.272' WHERE ID = 1 AND `LOCKED` = 0;
+22:09:00.292 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:09:00.292 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:00.297 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:09:00.313 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:09:00.322 [main] INFO  org.flowable.dmn.engine.impl.DmnEngineImpl - DmnEngine default created
+22:09:00.322 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+22:09:00.322 [main] INFO  org.flowable.content.spring.SpringContentEngineConfiguration - Content file system root : C:\Users\ÍÁ¶¹ÏÉÈË\content
+22:09:00.331 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select version();
+22:09:00.344 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 4 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK;
+22:09:00.348 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK;
+22:09:00.352 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1;
+22:09:00.358 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:09:00.353' WHERE ID = 1 AND `LOCKED` = 0;
+22:09:00.366 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:09:00.547 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT MD5SUM FROM workflow_center.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1;
+22:09:00.550 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CO_DATABASECHANGELOG;
+22:09:00.550 [main] INFO  liquibase.changelog - Reading from workflow_center.ACT_CO_DATABASECHANGELOG
+22:09:00.553 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT * FROM workflow_center.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC;
+22:09:00.561 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:09:00.608 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:09:00.612 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1;
+22:09:00.622 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 8 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:09:00.612' WHERE ID = 1 AND `LOCKED` = 0;
+22:09:00.637 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:09:00.638 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:00.641 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:09:00.654 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:09:00.658 [main] INFO  org.flowable.content.engine.impl.ContentEngineImpl - ContentEngine default created
+22:09:00.658 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+22:09:00.681 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:09:00.696 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'identitylink.schema.version';
+22:09:00.714 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'entitylink.schema.version';
+22:09:00.730 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'eventsubscription.schema.version';
+22:09:00.746 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'task.schema.version';
+22:09:00.762 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'variable.schema.version';
+22:09:00.778 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'job.schema.version';
+22:09:00.783 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select version();
+22:09:00.793 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK;
+22:09:00.796 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK;
+22:09:00.799 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:09:00.802 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:09:00.799' WHERE ID = 1 AND `LOCKED` = 0;
+22:09:00.809 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:09:00.975 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT MD5SUM FROM workflow_center.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1;
+22:09:00.979 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CMMN_DATABASECHANGELOG;
+22:09:00.979 [main] INFO  liquibase.changelog - Reading from workflow_center.ACT_CMMN_DATABASECHANGELOG
+22:09:00.984 [main] INFO  p6spy - 2021-09-09 22:09:00 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT * FROM workflow_center.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC;
+22:09:01.003 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:09:01.009 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:09:01.012 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:09:01.017 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:09:01.013' WHERE ID = 1 AND `LOCKED` = 0;
+22:09:01.023 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:09:01.023 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:01.028 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:09:01.034 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:09:01.039 [main] INFO  org.flowable.cmmn.engine.impl.CmmnEngineImpl - CmmnEngine default created
+22:09:01.058 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:09:01.069 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select * from ACT_GE_PROPERTY where NAME_ = 'schema.version';
+22:09:01.094 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'identitylink.schema.version';
+22:09:01.110 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'entitylink.schema.version';
+22:09:01.125 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'eventsubscription.schema.version';
+22:09:01.142 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'task.schema.version';
+22:09:01.194 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'variable.schema.version';
+22:09:01.210 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'job.schema.version';
+22:09:01.228 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'batch.schema.version';
+22:09:01.233 [main] INFO  org.flowable.engine.impl.ProcessEngineImpl - ProcessEngine default created
+22:09:01.241 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select count(RES.ID_) from ACT_RE_DEPLOYMENT RES WHERE RES.ENGINE_VERSION_ = 'v5';
+22:09:01.242 [main] INFO  org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd - Total of v5 deployments found: 0
+22:09:01.253 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select * from ACT_GE_PROPERTY where NAME_ = 'cfg.execution-related-entities-count';
+22:09:01.264 [main] INFO  p6spy - 2021-09-09 22:09:01 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select * from ACT_GE_PROPERTY where NAME_ = 'cfg.task-related-entities-count';
+22:09:04.138 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+22:09:06.158 [cluster-ClusterId{value='613a1580f61a197d3504134e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188) [mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) [mongodb-driver-core-4.2.3.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_251]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_251]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_251]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_251]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_251]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_251]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_251]
+	at java.net.Socket.connect(Socket.java:606) ~[?:1.8.0_251]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.2.3.jar:?]
+	... 4 more
+22:09:09.910 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:application name="process-center" hostname="LAPTOP-VESM13MU" qosEnable="false" />] have been binding by the configuration properties [{name=process-center, qos-enable=false}]
+22:09:09.980 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:registry address="nacos://localhost" protocol="nacos" port="8848" />] have been binding by the configuration properties [{address=nacos://localhost, port=8848}]
+22:09:10.032 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:protocol name="dubbo" port="8999" />] have been binding by the configuration properties [{name=dubbo, port=8999}]
+22:09:10.085 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:provider />] have been binding by the configuration properties [{group=process, version=1.0.0}]
+22:09:10.241 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:consumer />] have been binding by the configuration properties [{timeout=30000, group=process, version=1.0.0}]
+22:09:10.285 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:config-center includeSpringEnv="false" />] have been binding by the configuration properties [{address=nacos://localhost:8848}]
+22:09:10.318 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:metadata-report address="redis://localhost:6379" />] have been binding by the configuration properties [{address=redis://localhost:6379}]
+22:09:12.337 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+22:09:12.337 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+22:09:12.337 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+22:09:12.339 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of e0675fe9-baae-4107-b004-931601150dd4
+22:09:12.339 [main] INFO  com.alibaba.nacos.common.remote.client - [e0675fe9-baae-4107-b004-931601150dd4]RpcClient init label, labels={module=naming, source=sdk}
+22:09:12.339 [main] INFO  com.alibaba.nacos.common.remote.client - [e0675fe9-baae-4107-b004-931601150dd4]RpcClient init, ServerListFactory =com.alibaba.nacos.client.naming.core.ServerListManager
+22:09:12.340 [main] INFO  com.alibaba.nacos.common.remote.client - [e0675fe9-baae-4107-b004-931601150dd4] Try to connect to server on start up, server: {serverIp='localhost', server main port=8848}
+22:09:12.463 [main] INFO  com.alibaba.nacos.common.remote.client - [e0675fe9-baae-4107-b004-931601150dd4] Success to connect to server [localhost:8848] on start up,connectionId=1631196552345_127.0.0.1_52875
+22:09:12.463 [main] INFO  com.alibaba.nacos.common.remote.client - [e0675fe9-baae-4107-b004-931601150dd4]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+22:09:12.463 [main] INFO  com.alibaba.nacos.common.remote.client - [e0675fe9-baae-4107-b004-931601150dd4]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+22:09:12.463 [main] INFO  com.alibaba.nacos.common.remote.client - [e0675fe9-baae-4107-b004-931601150dd4]Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+22:09:12.463 [main] INFO  com.alibaba.nacos.common.remote.client - [e0675fe9-baae-4107-b004-931601150dd4]Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcConnectionEventListener
+22:09:12.465 [main] INFO  com.alibaba.nacos.client.identify.CredentialWatcher - null No credential found
+22:09:12.473 [main] INFO  com.alibaba.nacos.client.naming - init new ips(1) service: DEFAULT_GROUP@@process-center@@DEFAULT -> [{"ip":"192.168.3.47","port":6066,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@process-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:09:12.480 [main] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@process-center@@DEFAULT -> [{"ip":"192.168.3.47","port":6066,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@process-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:09:12.481 [main] INFO  org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+22:09:12.482 [Thread-48] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable - starting to acquire async jobs due
+22:09:12.498 [Thread-49] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable - starting to acquire async jobs due
+22:09:12.499 [Thread-50] INFO  org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable - starting to reset expired jobs for engine cmmn
+22:09:12.550 [flowable-cmmn-reset-expired-jobs] INFO  p6spy - 2021-09-09 22:09:12 | ºÄÊ± 4 ms | SQL Óï¾ä£º
+select RES.* from ACT_RU_EXTERNAL_JOB RES WHERE SCOPE_TYPE_ = 'cmmn' and LOCK_EXP_TIME_ is not null and LOCK_EXP_TIME_ < '2021-09-09T22:09:12.545+0800' LIMIT 3 OFFSET 0;
+22:09:12.590 [Druid-ConnectionPool-Create-111515862] INFO  p6spy - 2021-09-09 22:09:12 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT 1 FROM DUAL;
+22:09:12.799 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:12.807 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:12.854 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.880 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.885 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.889 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.907 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:09:12.917 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:12.920 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:12.932 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.936 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.940 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.944 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.950 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.954 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:09:13.060 [nacos-grpc-client-executor-5] INFO  com.alibaba.nacos.common.remote.client - [e0675fe9-baae-4107-b004-931601150dd4]receive server push request,request=NotifySubscriberRequest,requestId=151
+22:09:13.061 [nacos-grpc-client-executor-5] INFO  com.alibaba.nacos.client.naming - init new ips(1) service: DEFAULT_GROUP@@process-center -> [{"ip":"192.168.3.47","port":6066,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@process-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:09:13.061 [nacos-grpc-client-executor-5] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@process-center -> [{"ip":"192.168.3.47","port":6066,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@process-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:09:13.063 [nacos-grpc-client-executor-5] INFO  com.alibaba.nacos.common.remote.client - [e0675fe9-baae-4107-b004-931601150dd4]ack server push request,request=NotifySubscriberRequest,requestId=151
+22:09:14.153 [main] INFO  org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+22:09:14.153 [flowable-cmmn-acquire-async-jobs] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable - stopped async job due acquisition for engine cmmn
+22:09:14.153 [flowable-cmmn-acquire-timer-jobs] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable - stopped async job due acquisition
+22:09:14.153 [flowable-cmmn-reset-expired-jobs] INFO  org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable - stopped resetting expired jobs for engine cmmn
+22:09:14.226 [main] INFO  p6spy - 2021-09-09 22:09:14 | ºÄÊ± 8 ms | SQL Óï¾ä£º
+update ACT_CMMN_RU_CASE_INST set LOCK_TIME_ = null, LOCK_OWNER_ = null where LOCK_OWNER_ = 'fd9fb5fa-ec9a-4ce8-8406-88e3ebf80f8a';
+22:09:14.236 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+22:09:14.236 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+22:09:14.568 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+22:09:14.569 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+22:09:14.569 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+22:09:14.569 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+22:09:14.895 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+22:09:14.895 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+22:09:14.895 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+22:09:14.895 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+22:09:14.895 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+22:09:14.895 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+22:09:14.895 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+22:09:14.895 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+22:09:14.896 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+22:09:14.896 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+22:09:14.896 [main] INFO  com.alibaba.nacos.client.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+22:09:14.896 [main] INFO  com.alibaba.nacos.client.identify.CredentialService - [null] CredentialService is freed
+22:09:14.896 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+22:09:14.897 [main] INFO  com.alibaba.nacos.common.remote.client - Shutdown rpc client ,set status to shutdown
+22:09:14.897 [main] INFO  com.alibaba.nacos.common.remote.client - Shutdown  client event executor java.util.concurrent.ScheduledThreadPoolExecutor@34742154[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+22:09:14.897 [main] INFO  com.alibaba.nacos.common.remote.client - Close current connection 1631196552345_127.0.0.1_52875
+22:09:14.898 [main] INFO  com.alibaba.nacos.common.remote.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@311911cd[Running, pool size = 9, active threads = 0, queued tasks = 0, completed tasks = 9]
+22:09:14.899 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+22:09:14.927 [main] INFO  p6spy - 2021-09-09 22:09:14 | ºÄÊ± 10 ms | SQL Óï¾ä£º
+update ACT_RU_EXECUTION set LOCK_TIME_ = null, LOCK_OWNER_ = null where LOCK_OWNER_ = '0f50b669-cff1-4f9d-bb3f-e46fde7774c6';
+22:09:14.949 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closing ...
+22:09:14.954 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed
+22:09:14.966 [main] INFO  org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+22:09:15.561 [main] INFO  org.apache.dubbo.spring.boot.context.event.OverrideDubboConfigApplicationListener - Dubbo Config was overridden by externalized configuration {dubbo.application.name=process-center, dubbo.application.qos-enable=false, dubbo.config-center.address=nacos://localhost:8848, dubbo.config.multiple=true, dubbo.consumer.group=process, dubbo.consumer.timeout=30000, dubbo.consumer.version=1.0.0, dubbo.metadata-report.address=redis://localhost:6379, dubbo.protocol.name=dubbo, dubbo.protocol.port=8999, dubbo.provider.group=process, dubbo.provider.version=1.0.0, dubbo.registry.address=nacos://localhost, dubbo.registry.port=8848, dubbo.scan.base-packages=com.workflow.process.center.service.dubbo}
+22:09:15.569 [main] INFO  com.workflow.process.center.flowable.core.FlowableTimerTest - Starting FlowableTimerTest using Java 1.8.0_251 on LAPTOP-VESM13MU with PID 29852 (started by ÍÁ¶¹ÏÉÈË in D:\process-cloud\process-center)
+22:09:15.569 [main] INFO  com.workflow.process.center.flowable.core.FlowableTimerTest - The following profiles are active: dev
+22:09:15.577 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.spring.boot.beans.factory.config.DubboConfigBeanCustomizer]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [namePropertyDefaultValueDubboConfigBeanCustomizer] has been registered.
+22:09:16.222 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [referenceAnnotationBeanPostProcessor] has been registered.
+22:09:16.222 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigAliasPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigAliasPostProcessor] has been registered.
+22:09:16.222 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboLifecycleComponentApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboLifecycleComponentApplicationListener] has been registered.
+22:09:16.222 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboBootstrapApplicationListener] has been registered.
+22:09:16.222 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.config.DubboConfigDefaultPropertyValueBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigDefaultPropertyValueBeanPostProcessor] has been registered.
+22:09:16.256 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, content : Root bean: class [org.apache.dubbo.config.ApplicationConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:09:16.256 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [configurationBeanBindingPostProcessor] has been registered.
+22:09:16.256 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.RegistryConfig#0, content : Root bean: class [org.apache.dubbo.config.RegistryConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:09:16.256 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, content : Root bean: class [org.apache.dubbo.config.ProtocolConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:09:16.256 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ProviderConfig#0, content : Root bean: class [org.apache.dubbo.config.ProviderConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:09:16.256 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, content : Root bean: class [org.apache.dubbo.config.ConsumerConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:09:16.257 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.spring.ConfigCenterBean#0, content : Root bean: class [org.apache.dubbo.config.spring.ConfigCenterBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:09:16.257 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.MetadataReportConfig#0, content : Root bean: class [org.apache.dubbo.config.MetadataReportConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+22:09:17.216 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+22:09:18.364 [main] INFO  p6spy - 2021-09-09 22:09:18 | ºÄÊ± 1 ms | SQL Óï¾ä£º
+SELECT 1 FROM DUAL;
+22:09:18.368 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-4} inited
+22:09:19.287 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowEmail",So @TableField annotation will not work!
+22:09:19.315 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowExpression",So @TableField annotation will not work!
+22:09:19.397 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListener",So @TableField annotation will not work!
+22:09:19.421 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListenerParam",So @TableField annotation will not work!
+22:09:19.479 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModel",So @TableField annotation will not work!
+22:09:19.508 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReForm",So @TableField annotation will not work!
+22:09:19.535 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReFormReActivity",So @TableField annotation will not work!
+22:09:20.493 [main] INFO  org.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration - No deployment resources were found for autodeployment
+22:09:22.513 [main] INFO  org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration - No deployment resources were found for autodeployment
+22:09:22.763 [main] INFO  org.flowable.spring.boot.eventregistry.EventRegistryAutoConfiguration - No deployment resources were found for autodeployment
+22:09:25.850 [main] INFO  com.workflow.process.center.config.flowable.FlowableConfig - ÅäÖÃÀ©Õ¹±í´ïÊ½½âÎö·½·¨
+22:09:25.850 [main] INFO  com.workflow.process.center.config.flowable.FlowableConfig - ³õÊ¼»¯×â»§ÓÊÏä·þÎñÅäÖÃ£¡
+22:09:25.891 [main] INFO  p6spy - 2021-09-09 22:09:25 | ºÄÊ± 39 ms | SQL Óï¾ä£º
+SELECT id,tennat_id,mail_server_host,mail_server_port,mail_default_from,mail_username,mail_password,mail_ssl,note,creator,create_time,update_time,updator,del_flag FROM work_flow_email WHERE del_flag=0;
+22:09:25.901 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Found 5 Engine Configurators in total:
+22:09:25.901 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:09:25.901 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:09:25.901 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+22:09:25.901 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+22:09:25.901 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+22:09:25.901 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:09:25.903 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:09:25.904 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+22:09:25.905 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+22:09:25.906 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+22:09:26.373 [main] INFO  org.flowable.common.engine.impl.async.DefaultAsyncTaskExecutor - Creating thread pool queue of size 100
+22:09:26.373 [main] INFO  org.flowable.common.engine.impl.async.DefaultAsyncTaskExecutor - Creating thread factory with naming pattern flowable-async-job-executor-thread-%d
+22:09:26.373 [main] INFO  org.flowable.common.engine.impl.async.DefaultAsyncTaskExecutor - Creating executor service with corePoolSize 8, maxPoolSize 8 and keepAliveTime 5000
+22:09:26.373 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:09:26.427 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:09:26.432 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select version();
+22:09:26.466 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:09:26.647 [main] INFO  liquibase.changelog - Reading from workflow_center.FLW_EV_DATABASECHANGELOG
+22:09:26.667 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:09:26.685 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:09:26.685 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:26.695 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:09:26.700 [main] INFO  org.flowable.eventregistry.impl.EventRegistryEngineImpl - EventRegistryEngine default created
+22:09:26.700 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:09:26.719 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_ID_PROPERTY where NAME_ = 'schema.version';
+22:09:26.719 [main] INFO  org.flowable.idm.engine.impl.IdmEngineImpl - IdmEngine default created
+22:09:26.719 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+22:09:26.739 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:09:26.743 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select version();
+22:09:26.754 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK;
+22:09:26.757 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK;
+22:09:26.760 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:09:26.764 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:09:26.761' WHERE ID = 1 AND `LOCKED` = 0;
+22:09:26.769 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:09:26.957 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT MD5SUM FROM workflow_center.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1;
+22:09:26.961 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_DMN_DATABASECHANGELOG;
+22:09:26.961 [main] INFO  liquibase.changelog - Reading from workflow_center.ACT_DMN_DATABASECHANGELOG
+22:09:26.965 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT * FROM workflow_center.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC;
+22:09:26.975 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:09:26.981 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:09:26.984 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:09:26.988 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:09:26.984' WHERE ID = 1 AND `LOCKED` = 0;
+22:09:26.992 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:09:26.993 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:26.997 [main] INFO  p6spy - 2021-09-09 22:09:26 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_DMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:09:27.002 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:09:27.006 [main] INFO  org.flowable.dmn.engine.impl.DmnEngineImpl - DmnEngine default created
+22:09:27.006 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+22:09:27.006 [main] INFO  org.flowable.content.spring.SpringContentEngineConfiguration - Content file system root : C:\Users\ÍÁ¶¹ÏÉÈË\content
+22:09:27.014 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select version();
+22:09:27.024 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK;
+22:09:27.027 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK;
+22:09:27.031 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1;
+22:09:27.036 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:09:27.031' WHERE ID = 1 AND `LOCKED` = 0;
+22:09:27.042 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:09:27.243 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT MD5SUM FROM workflow_center.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1;
+22:09:27.247 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CO_DATABASECHANGELOG;
+22:09:27.247 [main] INFO  liquibase.changelog - Reading from workflow_center.ACT_CO_DATABASECHANGELOG
+22:09:27.251 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT * FROM workflow_center.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC;
+22:09:27.259 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:09:27.265 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:09:27.269 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1;
+22:09:27.274 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:09:27.269' WHERE ID = 1 AND `LOCKED` = 0;
+22:09:27.281 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:09:27.281 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:27.286 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 4 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CO_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:09:27.293 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:09:27.298 [main] INFO  org.flowable.content.engine.impl.ContentEngineImpl - ContentEngine default created
+22:09:27.298 [main] INFO  org.flowable.spring.SpringProcessEngineConfiguration - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+22:09:27.325 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:09:27.346 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'identitylink.schema.version';
+22:09:27.366 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'entitylink.schema.version';
+22:09:27.386 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'eventsubscription.schema.version';
+22:09:27.407 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'task.schema.version';
+22:09:27.427 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'variable.schema.version';
+22:09:27.446 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'job.schema.version';
+22:09:27.452 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select version();
+22:09:27.469 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 4 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK;
+22:09:27.473 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK;
+22:09:27.477 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:09:27.508 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 28 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:09:27.478' WHERE ID = 1 AND `LOCKED` = 0;
+22:09:27.515 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:09:27.766 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT MD5SUM FROM workflow_center.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1;
+22:09:27.770 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT COUNT(*) FROM workflow_center.ACT_CMMN_DATABASECHANGELOG;
+22:09:27.770 [main] INFO  liquibase.changelog - Reading from workflow_center.ACT_CMMN_DATABASECHANGELOG
+22:09:27.774 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT * FROM workflow_center.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC;
+22:09:27.792 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:09:27.798 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:09:27.801 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT `LOCKED` FROM workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1;
+22:09:27.805 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 1, LOCKEDBY = 'LAPTOP-VESM13MU (172.24.64.1)', LOCKGRANTED = '2021-09-09 22:09:27.802' WHERE ID = 1 AND `LOCKED` = 0;
+22:09:27.813 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+22:09:27.813 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:27.817 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+UPDATE workflow_center.ACT_CMMN_DATABASECHANGELOGLOCK SET `LOCKED` = 0, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1;
+22:09:27.823 [main] INFO  liquibase.lockservice - Successfully released change log lock
+22:09:27.829 [main] INFO  org.flowable.cmmn.engine.impl.CmmnEngineImpl - CmmnEngine default created
+22:09:27.853 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'common.schema.version';
+22:09:27.866 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select * from ACT_GE_PROPERTY where NAME_ = 'schema.version';
+22:09:27.895 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'identitylink.schema.version';
+22:09:27.916 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'entitylink.schema.version';
+22:09:27.937 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'eventsubscription.schema.version';
+22:09:27.957 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'task.schema.version';
+22:09:27.980 [main] INFO  p6spy - 2021-09-09 22:09:27 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'variable.schema.version';
+22:09:28.000 [main] INFO  p6spy - 2021-09-09 22:09:28 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'job.schema.version';
+22:09:28.021 [main] INFO  p6spy - 2021-09-09 22:09:28 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select VALUE_ from ACT_GE_PROPERTY where NAME_ = 'batch.schema.version';
+22:09:28.027 [main] INFO  org.flowable.engine.impl.ProcessEngineImpl - ProcessEngine default created
+22:09:28.035 [main] INFO  p6spy - 2021-09-09 22:09:28 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select count(RES.ID_) from ACT_RE_DEPLOYMENT RES WHERE RES.ENGINE_VERSION_ = 'v5';
+22:09:28.037 [main] INFO  org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd - Total of v5 deployments found: 0
+22:09:28.048 [main] INFO  p6spy - 2021-09-09 22:09:28 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+select * from ACT_GE_PROPERTY where NAME_ = 'cfg.execution-related-entities-count';
+22:09:28.061 [main] INFO  p6spy - 2021-09-09 22:09:28 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select * from ACT_GE_PROPERTY where NAME_ = 'cfg.task-related-entities-count';
+22:09:31.164 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+22:09:33.189 [cluster-ClusterId{value='613a159bf61a197d3504134f', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188) [mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) [mongodb-driver-core-4.2.3.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_251]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_251]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_251]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_251]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_251]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_251]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_251]
+	at java.net.Socket.connect(Socket.java:606) ~[?:1.8.0_251]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79) ~[mongodb-driver-core-4.2.3.jar:?]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.2.3.jar:?]
+	... 4 more
+22:09:36.454 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:application name="process-center" hostname="LAPTOP-VESM13MU" qosEnable="false" />] have been binding by the configuration properties [{name=process-center, qos-enable=false}]
+22:09:36.533 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:registry address="nacos://localhost" protocol="nacos" port="8848" />] have been binding by the configuration properties [{address=nacos://localhost, port=8848}]
+22:09:36.574 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:protocol name="dubbo" port="8999" />] have been binding by the configuration properties [{name=dubbo, port=8999}]
+22:09:36.624 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:provider />] have been binding by the configuration properties [{group=process, version=1.0.0}]
+22:09:36.756 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:consumer />] have been binding by the configuration properties [{timeout=30000, group=process, version=1.0.0}]
+22:09:36.793 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:config-center includeSpringEnv="false" />] have been binding by the configuration properties [{address=nacos://localhost:8848}]
+22:09:36.822 [main] INFO  com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:metadata-report address="redis://localhost:6379" />] have been binding by the configuration properties [{address=redis://localhost:6379}]
+22:09:39.081 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+22:09:39.081 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+22:09:39.081 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+22:09:39.083 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 98dbfdde-c260-4f01-911e-d079c600d2b3
+22:09:39.083 [main] INFO  com.alibaba.nacos.common.remote.client - [98dbfdde-c260-4f01-911e-d079c600d2b3]RpcClient init label, labels={module=naming, source=sdk}
+22:09:39.084 [main] INFO  com.alibaba.nacos.common.remote.client - [98dbfdde-c260-4f01-911e-d079c600d2b3]RpcClient init, ServerListFactory =com.alibaba.nacos.client.naming.core.ServerListManager
+22:09:39.084 [main] INFO  com.alibaba.nacos.common.remote.client - [98dbfdde-c260-4f01-911e-d079c600d2b3] Try to connect to server on start up, server: {serverIp='localhost', server main port=8848}
+22:09:39.206 [main] INFO  com.alibaba.nacos.common.remote.client - [98dbfdde-c260-4f01-911e-d079c600d2b3] Success to connect to server [localhost:8848] on start up,connectionId=1631196579090_127.0.0.1_52897
+22:09:39.206 [main] INFO  com.alibaba.nacos.common.remote.client - [98dbfdde-c260-4f01-911e-d079c600d2b3]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+22:09:39.207 [main] INFO  com.alibaba.nacos.common.remote.client - [98dbfdde-c260-4f01-911e-d079c600d2b3]Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$4
+22:09:39.207 [main] INFO  com.alibaba.nacos.common.remote.client - [98dbfdde-c260-4f01-911e-d079c600d2b3]Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+22:09:39.207 [main] INFO  com.alibaba.nacos.common.remote.client - [98dbfdde-c260-4f01-911e-d079c600d2b3]Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcConnectionEventListener
+22:09:39.208 [main] INFO  com.alibaba.nacos.client.identify.CredentialWatcher - null No credential found
+22:09:39.216 [main] INFO  com.alibaba.nacos.client.naming - init new ips(1) service: DEFAULT_GROUP@@process-center@@DEFAULT -> [{"ip":"192.168.3.47","port":6066,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@process-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:09:39.217 [main] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@process-center@@DEFAULT -> [{"ip":"192.168.3.47","port":6066,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@process-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:09:39.219 [main] INFO  org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+22:09:39.220 [Thread-62] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable - starting to acquire async jobs due
+22:09:39.253 [Thread-63] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable - starting to acquire async jobs due
+22:09:39.255 [Thread-64] INFO  org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable - starting to reset expired jobs for engine cmmn
+22:09:39.305 [Druid-ConnectionPool-Create-1698627786] INFO  p6spy - 2021-09-09 22:09:39 | ºÄÊ± 2 ms | SQL Óï¾ä£º
+SELECT 1 FROM DUAL;
+22:09:39.306 [flowable-cmmn-reset-expired-jobs] INFO  p6spy - 2021-09-09 22:09:39 | ºÄÊ± 3 ms | SQL Óï¾ä£º
+select RES.* from ACT_RU_EXTERNAL_JOB RES WHERE SCOPE_TYPE_ = 'cmmn' and LOCK_EXP_TIME_ is not null and LOCK_EXP_TIME_ < '2021-09-09T22:09:39.302+0800' LIMIT 3 OFFSET 0;
+22:09:39.516 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:39.523 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:39.557 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.582 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.586 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.590 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.604 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:09:39.616 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:39.620 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:39.631 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.635 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.639 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.645 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.650 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.653 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:09:39.784 [nacos-grpc-client-executor-6] INFO  com.alibaba.nacos.common.remote.client - [98dbfdde-c260-4f01-911e-d079c600d2b3]receive server push request,request=NotifySubscriberRequest,requestId=152
+22:09:39.785 [nacos-grpc-client-executor-6] INFO  com.alibaba.nacos.client.naming - init new ips(1) service: DEFAULT_GROUP@@process-center -> [{"ip":"192.168.3.47","port":6066,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@process-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:09:39.785 [nacos-grpc-client-executor-6] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@process-center -> [{"ip":"192.168.3.47","port":6066,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@process-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:09:39.787 [nacos-grpc-client-executor-6] INFO  com.alibaba.nacos.common.remote.client - [98dbfdde-c260-4f01-911e-d079c600d2b3]ack server push request,request=NotifySubscriberRequest,requestId=152
+22:09:40.632 [main] INFO  org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+22:09:40.632 [flowable-cmmn-acquire-timer-jobs] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable - stopped async job due acquisition
+22:09:40.632 [flowable-cmmn-reset-expired-jobs] INFO  org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable - stopped resetting expired jobs for engine cmmn
+22:09:40.632 [flowable-cmmn-acquire-async-jobs] INFO  org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable - stopped async job due acquisition for engine cmmn
+22:09:40.656 [main] INFO  p6spy - 2021-09-09 22:09:40 | ºÄÊ± 8 ms | SQL Óï¾ä£º
+update ACT_CMMN_RU_CASE_INST set LOCK_TIME_ = null, LOCK_OWNER_ = null where LOCK_OWNER_ = 'd95b316a-b457-4f93-9e20-4d567fa1b75b';
+22:09:40.662 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+22:09:40.663 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+22:09:40.988 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+22:09:40.989 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+22:09:40.989 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+22:09:40.989 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+22:09:41.302 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+22:09:41.303 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+22:09:41.304 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+22:09:41.304 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+22:09:41.304 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+22:09:41.304 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+22:09:41.304 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+22:09:41.305 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+22:09:41.305 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+22:09:41.305 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+22:09:41.305 [main] INFO  com.alibaba.nacos.client.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+22:09:41.306 [main] INFO  com.alibaba.nacos.client.identify.CredentialService - [null] CredentialService is freed
+22:09:41.307 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+22:09:41.307 [main] INFO  com.alibaba.nacos.common.remote.client - Shutdown rpc client ,set status to shutdown
+22:09:41.307 [main] INFO  com.alibaba.nacos.common.remote.client - Shutdown  client event executor java.util.concurrent.ScheduledThreadPoolExecutor@48a0dae0[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+22:09:41.307 [main] INFO  com.alibaba.nacos.common.remote.client - Close current connection 1631196579090_127.0.0.1_52897
+22:09:41.310 [main] INFO  com.alibaba.nacos.common.remote.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@57bba615[Running, pool size = 9, active threads = 0, queued tasks = 0, completed tasks = 9]
+22:09:41.311 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+22:09:41.357 [main] INFO  p6spy - 2021-09-09 22:09:41 | ºÄÊ± 12 ms | SQL Óï¾ä£º
+update ACT_RU_EXECUTION set LOCK_TIME_ = null, LOCK_OWNER_ = null where LOCK_OWNER_ = '447e2e54-b01b-4d4f-84a6-b4d786783d3d';
+22:09:41.374 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-4} closing ...
+22:09:41.378 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-4} closed
+22:09:41.384 [main] INFO  org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+22:09:41.415 [Thread-10] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+22:09:41.415 [Thread-6] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+22:09:41.415 [Thread-10] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+22:09:41.416 [Thread-6] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end

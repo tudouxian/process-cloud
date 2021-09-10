@@ -1,0 +1,67 @@
+server:
+  port: 9206
+  servlet:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: process-center
+  profiles:
+    active: dev
+  liquibase:
+    enabled: false
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+feign:
+  httpclient:
+    enabled: true
+
+#flowable指标信息暴露在接口 /actuator/flowable
+management:
+  endpoint:
+    flowable:
+      enabled: true
+#flowable配置
+flowable:
+  common:
+    app:
+      idm-url: http://localhost:6066/
+      idm-admin:
+        password: 123456
+        user: admin
+  rest:
+    app:
+      authentication-mode: verify-privilege
+  modeler:
+    app:
+      rest-enabled: true
+  process:
+    async:
+      executor:
+        auto-activate: false
+    definition-cache-limit: -1
+  database-schema-update: true
+  activity-font-name: '宋体'
+  label-font-name: '宋体'
+  annotation-font-name: '宋体'
+
+
+    #logging:
+    #level:
+  #feign日志以什么级别监控哪个接口
+  #com.atguigu.springcloud.service.PaymentFeignService: DEBUG
+log4j:
+  logger:
+    org:
+      flowable:
+        task:
+          service:
+            impl:
+              persistence:
+                   entity: DEBUG

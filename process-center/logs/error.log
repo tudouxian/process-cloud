@@ -1,0 +1,8 @@
+22:08:13.848 [flowable-cmmn-reset-expired-jobs] ERROR com.alibaba.druid.filter.stat.StatFilter - slow sql 1176 millis. select
+        RES.*   
+        from ACT_RU_JOB RES
+         WHERE SCOPE_TYPE_ = ?
+            
+              and ((LOCK_EXP_TIME_ is not null and LOCK_EXP_TIME_ < ?)
+              or (LOCK_EXP_TIME_ is null and CREATE_TIME_ < ?))  
+         LIMIT ? OFFSET ?["cmmn","2021-09-09 22:08:12","2021-09-08 22:08:12",3,0]

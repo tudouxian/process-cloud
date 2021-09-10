@@ -1,0 +1,152 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 51MB
+      max-request-size: 51MB
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: localhost:8848
+      config:
+        # 配置中心地址
+        server-addr: localhost:8848
+        # 配置文件格式
+        file-extension: yml
+        # 共享配置
+        shared-configs:
+          - spy.properties
+          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+
+#  data:
+#    mongodb:
+#      uri: mongodb://myroot:tdkj123456@localhost:27017/work_flow_data?authSource=admin
+  datasource:
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    url: jdbc:p6spy:mysql://localhost:3306/workflow_center?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=true&nullCatalogMeansCurrent=true
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      #连接池配置
+      initial-size: 1
+      min-idle: 5
+      max-active: 20
+      #配置从连接池获取连接等待超时的时间
+      max-wait: 1000
+      #配置间隔多久启动一次DestroyThread，对连接池内的连接才进行一次检测，单位是毫秒
+      time-between-eviction-runs-millis: 600000
+      #配置一个连接在池中最大空闲时间，单位是毫秒
+      min-evictable-idle-time-millis: 600000
+      #设置从连接池获取连接时是否检查连接有效性，true时，每次都检查;false时，不检查
+      test-on-borrow: false
+      #设置往连接池归还连接时是否检查连接有效性，true时，每次都检查;false时，不检查
+      test-on-return: false
+      #设置从连接池获取连接时是否检查连接有效性，true时，如果连接空闲时间超过minEvictableIdleTimeMillis进行检查，否则不检查;false时，不检查
+      test-while-idle: true
+      #检验连接是否有效的查询语句。如果数据库Driver支持ping()方法，则优先使用ping()方法进行检查，否则使用validationQuery查询进行检查。(Oracle jdbc Driver目前不支持ping方法)
+      validation-query: SELECT 1 FROM DUAL
+      #检测连接是否有效的超时时间。底层调用jdbc Statement对象的void setQueryTimeout(int seconds)方法,单位是秒
+      validation-query-timeout: 1
+      #打开PSCache，并且指定每个连接上PSCache的大小，Oracle等支持游标的数据库，打开此开关，会以数量级提升性能，具体查阅PSCache相关资料
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      #配置监控统计拦截的filters
+      webStatFilter:
+        enabled: true
+      statViewServlet:
+        enabled: true
+        # 设置白名单，不填则允许所有访问
+        allow:
+        url-pattern: /druid/*
+        # 控制台管理用户名和密码
+        login-username: admin
+        login-password: 123456
+      filter:
+        stat:
+          enabled: true
+          # 慢SQL记录
+          log-slow-sql: true
+          slow-sql-millis: 1000
+          merge-sql: true
+        wall:
+          config:
+            multi-statement-allow: true
+
+  #redis配置
+  redis:
+    host: localhost
+    port: 6379
+    password: 12345
+    timeout: 5000
+#    jedis:
+#      pool:
+#        max-idle: 6
+#        max-active: 32
+#        max-wait: 100
+#        min-idle: 4
+    lettuce:
+      pool:
+        max-active: 200
+        max-idle: 50
+        min-idle: 24
+        max-wait: 2000
+
+#dubbo配置
+dubbo:
+  application:
+    name: process-center
+  scan:
+    base-packages: com.workflow.process.center.service.dubbo
+  protocol:
+    name: dubbo
+    port: 8999
+    # serialization: kryo
+  registry:
+    address: nacos://localhost
+    port: 8848
+  metadata-report:
+    address: redis://localhost:6379
+  config-center:
+    address: nacos://localhost:8848
+  consumer:
+    timeout: 30000
+    group: process
+    version: 1.0.0
+    check: false
+  provider:
+    group: process
+    version: 1.0.0
+
+#请求路径前缀
+#server:
+#  servlet:
+#    context-path: /api/process
+mybatis-plus:
+  configuration:
+    default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  #使用spy打印sql日志
+    map-underscore-to-camel-case: true
+  mapper-locations:
+     - classpath:mapper/*.xml
+   #  - classpath:/META-INF/flow-mybatis-mappings/*/xml/*.xml
+   #  - classpath:/META-INF/modeler-mybatis-mappings/*.xml
+  type-aliases-package: com.workflow.process.center.domain.entity
+  configuration-properties:
+    prefix:
+    blobType: BLOB
+    boolValue: TRUE
+    #枚举
+  type-enums-package: com.workflow.process.center.common.enums.entity
+#分页配置
+pagehelper:
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+# Minio配置
+minio:
+  url: http://localhost:9090
+  accessKey: cykj
+  secretKey: cykj123456
+  bucketName: process

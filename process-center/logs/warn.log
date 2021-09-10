@@ -1,0 +1,129 @@
+22:07:36.909 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowEmail",So @TableField annotation will not work!
+22:07:36.968 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowExpression",So @TableField annotation will not work!
+22:07:37.102 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListener",So @TableField annotation will not work!
+22:07:37.151 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListenerParam",So @TableField annotation will not work!
+22:07:37.244 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModel",So @TableField annotation will not work!
+22:07:37.287 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReForm",So @TableField annotation will not work!
+22:07:37.337 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReFormReActivity",So @TableField annotation will not work!
+22:07:50.177 [main] WARN  liquibase.hub - Skipping auto-registration
+22:07:50.701 [main] WARN  liquibase.hub - Skipping auto-registration
+22:07:51.359 [main] WARN  liquibase.hub - Skipping auto-registration
+22:07:51.952 [main] WARN  liquibase.hub - Skipping auto-registration
+22:08:13.848 [flowable-cmmn-reset-expired-jobs] ERROR com.alibaba.druid.filter.stat.StatFilter - slow sql 1176 millis. select
+        RES.*   
+        from ACT_RU_JOB RES
+         WHERE SCOPE_TYPE_ = ?
+            
+              and ((LOCK_EXP_TIME_ is not null and LOCK_EXP_TIME_ < ?)
+              or (LOCK_EXP_TIME_ is null and CREATE_TIME_ < ?))  
+         LIMIT ? OFFSET ?["cmmn","2021-09-09 22:08:12","2021-09-08 22:08:12",3,0]
+22:08:13.866 [flowable-cmmn-acquire-timer-jobs] WARN  com.alibaba.druid.pool.DruidDataSource - get connection timeout retry : 1
+22:08:15.000 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:15.021 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:15.126 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.189 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.198 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.206 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.290 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:08:15.307 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:15.313 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:15.330 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.339 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.348 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.357 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.367 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:15.374 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:08:24.476 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowEmail",So @TableField annotation will not work!
+22:08:24.515 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowExpression",So @TableField annotation will not work!
+22:08:24.629 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListener",So @TableField annotation will not work!
+22:08:24.728 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListenerParam",So @TableField annotation will not work!
+22:08:24.826 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModel",So @TableField annotation will not work!
+22:08:24.871 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReForm",So @TableField annotation will not work!
+22:08:24.924 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReFormReActivity",So @TableField annotation will not work!
+22:08:32.299 [main] WARN  liquibase.hub - Skipping auto-registration
+22:08:32.658 [main] WARN  liquibase.hub - Skipping auto-registration
+22:08:32.967 [main] WARN  liquibase.hub - Skipping auto-registration
+22:08:33.424 [main] WARN  liquibase.hub - Skipping auto-registration
+22:08:45.593 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:45.601 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:45.648 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.680 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.685 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.692 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.710 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:08:45.720 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:45.724 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:08:45.734 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.738 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.742 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.747 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.752 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:08:45.757 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:08:47.721 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+22:08:47.722 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+22:08:47.722 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+22:08:47.722 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+22:08:52.629 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowEmail",So @TableField annotation will not work!
+22:08:52.651 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowExpression",So @TableField annotation will not work!
+22:08:52.725 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListener",So @TableField annotation will not work!
+22:08:52.752 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListenerParam",So @TableField annotation will not work!
+22:08:52.809 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModel",So @TableField annotation will not work!
+22:08:52.843 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReForm",So @TableField annotation will not work!
+22:08:52.870 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReFormReActivity",So @TableField annotation will not work!
+22:08:59.853 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:00.292 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:00.638 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:01.023 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:12.799 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:12.807 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:12.854 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.880 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.885 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.889 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.907 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:09:12.917 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:12.920 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:12.932 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.936 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.940 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.944 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.950 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:12.954 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:09:14.895 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+22:09:14.895 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+22:09:14.896 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+22:09:14.896 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+22:09:19.287 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowEmail",So @TableField annotation will not work!
+22:09:19.315 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowExpression",So @TableField annotation will not work!
+22:09:19.397 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListener",So @TableField annotation will not work!
+22:09:19.421 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowListenerParam",So @TableField annotation will not work!
+22:09:19.479 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModel",So @TableField annotation will not work!
+22:09:19.508 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReForm",So @TableField annotation will not work!
+22:09:19.535 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "id" is the table primary key by @TableId annotation in Class: "com.workflow.process.center.domain.entity.WorkFlowModelReFormReActivity",So @TableField annotation will not work!
+22:09:26.685 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:26.993 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:27.281 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:27.813 [main] WARN  liquibase.hub - Skipping auto-registration
+22:09:39.516 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:39.523 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:39.557 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.582 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.586 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.590 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.604 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:09:39.616 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: MigrationValidationProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:39.620 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: StartProcessServiceDTO, dataTypeClass: class java.lang.Void
+22:09:39.631 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: ProcessInstanceQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.635 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.639 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.645 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.650 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: TaskQueryDTO, dataTypeClass: class java.lang.Void
+22:09:39.653 [main] WARN  springfox.documentation.swagger.readers.operation.OperationImplicitParameterReader - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+22:09:41.304 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+22:09:41.304 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+22:09:41.305 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+22:09:41.305 [main] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+22:09:41.415 [Thread-10] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+22:09:41.415 [Thread-6] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+22:09:41.415 [Thread-10] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+22:09:41.416 [Thread-6] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end

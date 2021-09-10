@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.workflow.process.bussiness.mapper.BussinessLeaveMapper">
+
+    <resultMap type="com.workflow.process.bussiness.domain.entity.BussinessLeave" id="BussinessLeaveBaseResultMap">
+        <result property="id" column="id"/>
+        <result property="processInsId" column="process_ins_id"/>
+        <result property="applyerUserId" column="applyer_user_id"/>
+        <result property="title" column="title"/>
+        <result property="type" column="type"/>
+        <result property="days" column="days"/>
+        <result property="startTime" column="start_time"/>
+        <result property="endTime" column="end_time"/>
+        <result property="deptId" column="dept_id"/>
+        <result property="deptName" column="dept_name"/>
+        <result property="note" column="note"/>
+        <result property="creator" column="creator"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updator" column="updator"/>
+        <result property="delFlag" column="del_flag"/>
+    </resultMap>
+
+    <!-- 查询条件 -->
+    <sql id="whereSql">
+        <where>
+            <if test="id != null and id != ''">
+                and a.id = #{id}
+            </if>
+            <if test="processInsId != null and processInsId != ''">
+                and a.process_ins_id = #{processInsId}
+            </if>
+            <if test="applyerUserId != null and applyerUserId != ''">
+                and a.applyer_user_id = #{applyerUserId}
+            </if>
+            <if test="title != null and title != ''">
+                and a.title = #{title}
+            </if>
+            <if test="type != null and type != ''">
+                and a.type = #{type}
+            </if>
+            <if test="days != null">
+                and a.days = #{days}
+            </if>
+            <if test="startTime != null">
+                and a.start_time = #{startTime}
+            </if>
+            <if test="endTime != null">
+                and a.end_time = #{endTime}
+            </if>
+            <if test="deptId != null and deptId != ''">
+                and a.dept_id = #{deptId}
+            </if>
+            <if test="deptName != null and deptName != ''">
+                and a.dept_name = #{deptName}
+            </if>
+            <if test="note != null and note != ''">
+                and a.note = #{note}
+            </if>
+            <if test="creator != null and creator != ''">
+                and a.creator = #{creator}
+            </if>
+            <if test="createTime != null">
+                and a.create_time = #{createTime}
+            </if>
+            <if test="updateTime != null">
+                and a.update_time = #{updateTime}
+            </if>
+            <if test="updator != null and updator != ''">
+                and a.updator = #{updator}
+            </if>
+            <if test="delFlag != null">
+                and a.del_flag = #{delFlag}
+            </if>
+        </where>
+    </sql>
+
+</mapper>
