@@ -77,4 +77,9 @@ process-cloud
 微信搜索 土豆仙
 后续会更新流程引擎学习文章 
 
-![](http://image.zmxblog92.com/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg)
+公众号
+![公众号](http://image.zmxblog92.com/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg)
+
+
+QQ群
+![QQ群](http://image.zmxblog92.com/qq%E7%BE%A4.jpg)
